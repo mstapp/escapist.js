@@ -7,8 +7,8 @@
 
 
     escapist.html = function(str) {
-        if (str == null || str.length == 0) {
-            str = '';
+        if (typeof str !== 'string' || str.length === 0) {
+            return '';
         }
 
         var out = '';
@@ -41,8 +41,8 @@
 
 
     escapist.attr = function(str) {
-        if (str == null || str.length == 0) {
-            str = '';
+        if (typeof str !== 'string' || str.length === 0) {
+            return '';
         }
 
         var out = '';
