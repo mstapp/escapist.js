@@ -1,0 +1,19 @@
+{
+  "name": "escapist",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.4.x",
+    "grunt-contrib-copy": "0.4.x",
+    "grunt-contrib-watch": "0.3.x",
+    "jshint": "1.1.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

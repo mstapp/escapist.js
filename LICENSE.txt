@@ -1,4 +1,3 @@
-
 ==========================
 Escapist.js license:
 ==========================
@@ -27,6 +26,10 @@ THE SOFTWARE.
 
 
 ==========================
+Escapist.js includes significant code from the OWASP Reform project's
+javascript implementation.
+
+
 Reform license:
 ==========================
 
