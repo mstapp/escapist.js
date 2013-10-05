@@ -11,8 +11,8 @@
             return '';
         }
 
-        var out = '';
-        var len = str.length;
+        var out = '',
+            len = str.length;
 
         // Allow: a-z A-Z 0-9 SPACE , .
         // Allow (dec): 97-122 65-90 48-57 32 44 46
@@ -45,8 +45,8 @@
             return '';
         }
 
-        var out = '';
-        var len = str.length;
+        var out = '',
+            len = str.length;
 
         // Allow: a-z A-Z 0-9
         // Allow (dec): 97-122 65-90 48-57
