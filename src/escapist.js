@@ -1,12 +1,12 @@
 
-(function(){
+(function(window){
 
     // global namespace 'escapist', plus alias 'secure'
-    escapist = escapist || {};
-    secure = escapist;
+    var escapist = window.escapist = {};
+    window.secure = window.escapist;
 
 
-    escapist.HtmlEncode = function($str, $default) {
+    escapist.html = function($str, $default) {
         if($str == null || $str.length == 0)
         {
             $str = ($default == null ? '' : $default);
@@ -37,7 +37,11 @@
         return $out;
     };
 
-    escapist.HtmlAttributeEncode = function($str, $default) {
+    // legacy Reform API
+    escapist.HtmlEncode = escapist.html;
+
+
+    escapist.attr = function($str, $default) {
         if($str == null || $str.length == 0)
         {
             $str = ($default == null ? '' : $default);
@@ -66,6 +70,10 @@
 
         return $out;
     };
+
+    // legacy Reform API
+    escapist.HtmlAttributeEncode = escapist.attr;
+
 
     var hD="0123456789ABCDEF";
     function d2h(d) {
@@ -131,4 +139,4 @@
         return $out + '\'';
     };
 
-}).call(this);
+})(window);
