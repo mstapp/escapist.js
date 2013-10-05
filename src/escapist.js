@@ -6,9 +6,9 @@
     window.secure = window.escapist;
 
 
-    escapist.html = function($str, $default) {
+    escapist.html = function($str) {
         if ($str == null || $str.length == 0) {
-            $str = ($default == null ? '' : $default);
+            $str = '';
         }
 
         var $out = '';
@@ -40,9 +40,9 @@
     escapist.HtmlEncode = escapist.html;
 
 
-    escapist.attr = function($str, $default) {
+    escapist.attr = function($str) {
         if ($str == null || $str.length == 0) {
-            $str = ($default == null ? '' : $default);
+            $str = '';
         }
 
         var $out = '';
