@@ -8,10 +8,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     meta: {
-      versionMajor: '1',
-      versionMinor: '0',
-      versionPatch: '0',
-      version: '<%= meta.versionMajor %>.<%= meta.versionMinor %>.<%= meta.versionPatch %>',
+      version: '1.0.0',
       banner: '/*!\n  Escapist.js, v<%= meta.version %>\n' +
         '  Copyright (c) <%= grunt.template.today("yyyy") %> Michael Stapp\n' +
         '  MIT License\n' +
